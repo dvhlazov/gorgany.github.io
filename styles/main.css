@@ -83,6 +83,15 @@ padding-left:1px;
 .logo {
 	width: 216px;
 	height: 52px;
+	display: inline-block;
+	
+}
+.logo:hover {
+	border: 1px solid #f72727;
+	background-color: red;
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+	 
 	
 }
 
@@ -102,6 +111,10 @@ padding-left:1px;
 	justify-content: space-between;
 	padding-left: 20px;
 	
+}
+.search-field:hover {
+	background-color: #e0e0e0;
+	cursor: pointer;
 }
 .search-field-icon > a {
 	height: 44px;
@@ -124,12 +137,18 @@ padding-left:1px;
 	margin left: 10px;
 }
 .items-bot-top-header > p {
+	display: inline-block
+	background-color: grey;
 	padding-left: 20px;
+	
 }
 .items-bot-top-header > p:hover {
 	text-decoration: underline;
 	text-decoration-color: #C5222A;
 	cursor: pointer;
+	
+	
+	
 	
 }
 .bot-mid-header {
@@ -278,6 +297,11 @@ a.sidebar-link-price {
     	border-radius: 1px;
     	position: relative;
    	z-index: 9;
+	cursor: pointer;
+}
+.additional-block:focus {
+    outline: none; /* Видаляємо стандартну обводку */
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Додаємо тінь для підсвічування елемента */
 }
 .bot-main-items {
 	display: flex;
@@ -464,4 +488,28 @@ a.sidebar-link-price {
 	justify-content: center;
 	align-items: center;
 }
+
+.icons-container {
+	padding: 0;
+	margin:0;
 }
+.send-email-container {
+	padding-left: 10px;
+	width: 100%-10px;
+}
+.sidebar-item-price > a {
+	display: inline-block;
+}
+.sidebar-item-price > a:hover {
+	background-color: red;
+}
+.additional-block:nth-child(2n) {
+	border-bottom: 1px solid red;
+	
+
+}
+.additional-block:hover {
+	transform: scale(1.1);
+	animation: zoomIn 5.5s forwards;
+}
+
